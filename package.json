@@ -1,37 +1,79 @@
 {
-  "name": "react-native-modpow",
-  "version": "1.1.1-0",
+  "name": "@react-native-ohos/react-native-modpow",
+  "displayName": "React Native Modpow for HarmonyOS",
+  "version": "1.1.0",
   "description": "export native BigInteger.modPow() function that will not freeze your UX for more than a minute.",
-  "main": "index.js",
-  "react-native": "index.js",
-  "types": "index.d.ts",
-  "files": [
-    "android/",
-    "ios/",
-    "index.d.ts",
-    "index.js",
-    "react-native-modpow.podspec"
-  ],
-  "nativePackage": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "./dist/commonjs/index.js",
+  "module": "./dist/module/index.js",
+  "react-native": "./dist/module/index.js",
+  "types": "./dist/typescript/index.d.ts",
+  "license": "MIT",
+  "private": false,
+  "repository": "https://github.com/seald/react-native-modpow",
   "keywords": [
     "react-native",
-    "ios",
-    "android"
+    "harmony",
+    "harmonyos"
   ],
-  "repository": "https://github.com/seald/react-native-modpow",
-  "author": "Seald SAS <contact@seald.io> (https://seald.io)",
-  "license": "MIT",
   "homepage": "https://github.com/seald/react-native-modpow",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "harmony/",
+    "README.md",
+    "LICENSE",
+    "!harmony/oh_modules",
+    "!harmony/**/build",
+    "!harmony/**/oh_modules"
+  ],
+  "scripts": {
+    "prepare": "tsc --noEmit && bob build",
+    "codegen-lib": "react-native codegen-harmony --cpp-output-path ./harmony/modpow/src/main/cpp/generated --ets-output-path ./harmony/modpow/src/main/ets/generated"
+  },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react-native": ">=0.72"
   },
   "devDependencies": {
-    "react": "^18.2.0",
-    "react-native": "^0.71.0",
-    "semver": "^7.3.8"
+    "typescript": "5.0.4",
+    "@react-native/typescript-config": "0.79.5",
+    "react": "18.2.0",
+    "@types/react": "18.2.79",
+    "react-native": "0.72.5",
+    "jest": "^29.6.3",
+    "react-native-builder-bob": "^0.18.0",
+    "@react-native-oh/react-native-harmony-cli": "^0.77.50",
+    "metro": "^0.81.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "harmony": {
+    "alias": "react-native-modpow",
+    "autolinking": {
+      "cmakeLibraryTargetName": "modpow",
+      "ohPackageName": "@react-native-ohos/react-native-modpow",
+      "etsPackageClassName": "ModpowPackage",
+      "cppPackageClassName": "ModpowPackage"
+    },
+    "codegenConfig": [
+      {
+        "version": 1,
+        "specPaths": [
+          "./src/specs/v1"
+        ]
+      }
+    ]
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }

@@ -1,0 +1,30 @@
+{
+  "modulePathMap": {
+    "entry": "C:\\rn\\rntpc_react-native-modpow\\example\\harmony\\entry",
+    "modpow": "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "C:\\rn\\rntpc_react-native-modpow\\harmony",
+  "nodeModulesPath": "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "modpow",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\src\\main\\ets\\ModpowTurboModule.ets",
+    "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\src\\main\\ets\\ModpowTurboModulesFactory.ets",
+    "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\src\\main\\ets\\generated\\index.ets",
+    "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\src\\main\\ets\\generated\\ts.ts",
+    "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\src\\main\\ets\\generated\\components\\ts.ts",
+    "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\src\\main\\ets\\generated\\turboModules\\Modpow.ts",
+    "C:\\rn\\rntpc_react-native-modpow\\harmony\\modpow\\src\\main\\ets\\generated\\turboModules\\ts.ts"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "updateVersionInfo": {},
+  "customizedHar": false
+}

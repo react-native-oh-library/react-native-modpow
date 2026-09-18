@@ -1,0 +1,18 @@
+{
+  "apiType": "stageMode",
+  // cpp 源码由宿主 App 经 CMake/autolinking 编译（见 src/main/cpp/CMakeLists.txt），
+  // 本模块不启用 native 构建，externalNativeOptions 保持注释为刻意状态，勿打开。
+//  "buildOption": {
+//    "externalNativeOptions": {
+//      "path": "./src/main/cpp/CMakeLists.txt",
+//      "arguments": "",
+//      "cppFlags": ""
+//    },
+//  },
+  "targets": [
+    {
+      "name": "default",
+      "runtimeOS": "HarmonyOS"
+    }
+  ]
+}

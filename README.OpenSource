@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-modpow",
+        "License": "MIT License",
+        "License File": "LICENSE",
+        "Version Number": "1.1.0",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/seald/react-native-modpow",
+        "Description": "export native BigInteger.modPow() function that will not freeze your UX for more than a minute."
+    }
+]

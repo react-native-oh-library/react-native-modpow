@@ -1,0 +1,19 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": "file:../../node_modules/@react-native-oh/react-native-harmony/react_native_openharmony_release.har",
+    // entry 模块级声明：entry CMake（OH_MODULE_DIR 指 entry/oh_modules）的 autolinking 与
+    // RNOHPackagesFactory.ets 的 ArkTS 导入都从模块级 oh_modules 解析，仅工程级声明会导致
+    // hap 构建时 add_subdirectory 找不到 src/main/cpp
+    "@react-native-ohos/react-native-modpow": "file:../../node_modules/@react-native-ohos/react-native-modpow/harmony/modpow.har"
+  },
+  "devDependencies": {
+    "@ohos/hypium": "1.0.25"
+  },
+  "dynamicDependencies": {}
+}

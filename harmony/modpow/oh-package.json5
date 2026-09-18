@@ -1,0 +1,17 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+
+  },
+  "author": "Seald SAS <contact@seald.io>",
+  "name": "@react-native-ohos/react-native-modpow",
+  "description": "Big-integer modular exponentiation (modPow) for React Native HarmonyOS",
+  "main": "index.ets",
+  "version": "1.1.0",
+  "dependencies": {
+    // 与其他 rntpc_* RNOH 三方库统一写法：file:../react_native_openharmony 在库内并不真实存在，
+    // har_wrapper/宿主构建链路解析（本地打包时由 example 工作区内的 RNOH HAR 兜底，见 oh-package-lock.json5）；
+    // 独立发布前应改为 ohpm 仓库版本约束（如 "^0.77.0"，与实际使用的 RNOH 版本对齐）
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
+  }
+}
