@@ -1,0 +1,29 @@
+{
+	"app":	{
+		"bundleName":	"com.example.application",
+		"debug":	true,
+		"versionCode":	1000000,
+		"versionName":	"1.0.0",
+		"minAPIVersion":	50000012,
+		"targetAPIVersion":	60001021,
+		"apiReleaseType":	"Release",
+		"targetMinorAPIVersion":	0,
+		"targetPatchAPIVersion":	0,
+		"compileSdkVersion":	"6.1.1.125",
+		"compileSdkType":	"HarmonyOS",
+		"appEnvironments":	[],
+		"bundleType":	"app",
+		"buildMode":	"debug"
+	},
+	"module":	{
+		"name":	"modpow",
+		"type":	"har",
+		"deviceTypes":	["default", "tablet", "2in1"],
+		"requestPermissions":	[],
+		"packageName":	"@react-native-ohos/react-native-modpow",
+		"installationFree":	false,
+		"virtualMachine":	"ark12.0.2.0",
+		"compileMode":	"esmodule",
+		"dependencies":	[]
+	}
+}
