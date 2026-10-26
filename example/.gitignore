@@ -70,3 +70,5 @@ harmony/entry/src/main/resources/rawfile/hermes_bundle.hbc
 /coverage
 
 package-lock.json
+# RN framework version marker (see scripts/use-framework.js)
+.framework-version
