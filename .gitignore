@@ -9,20 +9,18 @@ yarn-error.log
 # Build output
 /dist
 
-# npm pack output
-*.tgz
+# npm pack output（tgz 需入库：example 依赖 file:../…*.tgz，对齐参考库策略）
+# *.tgz
 
 # IDE
 .idea/
 .vscode/
 
-# HarmonyOS
-harmony/library/.cxx/
-harmony/library/build/
-harmony/library/.hvigor/
+# HarmonyOS（模块侧由 harmony/modpow/.gitignore 接管：build/、oh_modules/、oh-package-lock.json5）
+harmony/modpow/.cxx/
+harmony/modpow/.hvigor/
 
 # rn.py build hap fingerprints / local build metadata
 .rn-build/
 
 package-lock.json
-*.tgz
