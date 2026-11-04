@@ -37,20 +37,7 @@ yarn add @react-native-ohos/react-native-modpow
 |--------------------------------------|----------------|-----------|
 | ~ 1.1.0                              | 是             |  0.84 / 0.82 / 0.77 / 0.72     |
 
-使用 AutoLink 的工程需要根据 [Autolink 框架指导文档](https://gitcode.com/CPF-RN/ohos_react_native/blob/master/docs/zh-cn/Autolinking.md) 配置。
-
-### 运行
-
-点击右上角的 `sync` 按钮
-
-或者在命令行终端执行：
-
-```bash
-cd entry
-ohpm install
-```
-
-然后编译、运行即可。
+使用 AutoLink 的工程需要根据 [Autolink 框架指导文档](https://atomgit.com/CPF-RN/ohos_react_native/blob/main/docs/zh-cn/02-开发/02-开发指南/Autolinking.md) 配置。
 
 <details>
 <summary>Manual Link 配置（Autolink 不可用时）</summary>
@@ -123,6 +110,19 @@ export function createRNPackages(ctx: RNPackageContext): RNPackage[] {
 
 </details>
 
+### 运行
+
+点击右上角的 `sync` 按钮
+
+或者在命令行终端执行：
+
+```bash
+cd entry
+ohpm install
+```
+
+然后编译、运行即可。
+
 ## 约束与限制
 
 ### 兼容性
@@ -137,7 +137,7 @@ Example 已适配 0.72 / 0.77 / 0.82 / 0.84 四个框架版本，可用 `npm run
 
 无需声明 `ohos.permission`，也无需运行时动态申请权限。
 
-### 编译运行API要求（如有）
+### 编译运行API要求
 
 > [!TIP] 当前三方库已支持在 `API12+` 工程编译。
 
@@ -184,15 +184,15 @@ Forge.jsbn.BigInteger.prototype.modPow = function nativeModPow (e, m) {
 
 ## 接口说明
 
-> [!TIP] "Platform"列表示该属性在原三方库上支持的平台。
+> [!TIP] "平台"列表示该属性在原三方库上支持的平台。
 
-> [!TIP] "OpenHarmony Support"列为 yes 表示 OpenHarmony平台支持 该属性；no 则表示不支持；partially 表示部分支持。使用方法跨平台一致，效果对标 iOS 或 Android 的效果。
+> [!TIP] "OpenHarmony平台支持"列为 "是" 表示 OpenHarmony 平台支持该属性；"否" 则表示不支持；"部分支持" 表示仅实现了功能的一部分。使用方法跨平台一致，效果对标 iOS 或 Android 的效果。
 
 ### API
 
 | 名称 | 类型 | 参数类型 | 返回值 | 必填 | 平台 | OpenHarmony平台支持 | 描述 |
 |--------|---------|-----|-------|-------|--------|-----|-----------------|
-| modPow | function | args: `{ target: string, value: string, modifier: string }` | string | Yes | All | yes | 大数模幂运算 `target^value mod modifier`，同步阻塞。三个参数均为十六进制字符串，返回小写十六进制字符串（无前导零、无 `0x` 前缀）。 |
+| modPow | function | args: `{ target: string, value: string, modifier: string }` | string | 是 | All | 是 | 大数模幂运算 `target^value mod modifier`，同步阻塞。三个参数均为十六进制字符串，返回小写十六进制字符串（无前导零、无 `0x` 前缀）。 |
 
 ### 未实现功能
 
@@ -311,6 +311,7 @@ npm run run:harmony -- 0.77
 │   └── scripts/use-framework.js           # RNOH 框架版本切换脚本
 ├── package.json
 ├── README.md
+├── README_en.md
 └── LICENSE
 ```
 

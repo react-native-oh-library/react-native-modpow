@@ -1,3 +1,5 @@
+# keep the signing configs out of git
+/build-profile.json5
 /node_modules
 /oh_modules
 /local.properties
