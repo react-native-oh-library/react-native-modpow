@@ -1,20 +1,8 @@
 {
   "app": {
-    "signingConfigs": [
-      {
-        "name": "default",
-        "type": "HarmonyOS",
-        "material": {
-          "certpath": "C:\\Users\\74253\\.ohos\\config\\default_harmony_n2Pu8hP74gTj6dWAb4mUCbPBdBUdInFlSRGWH3-mZCg=.cer",
-          "keyAlias": "debugKey",
-          "keyPassword": "0000001B71AFBD6E4F156C1F59367C712D2B2F77BDBD45ED8827282CDD80451EBC60C286CD738CD5993B22",
-          "profile": "C:\\Users\\74253\\.ohos\\config\\default_harmony_n2Pu8hP74gTj6dWAb4mUCbPBdBUdInFlSRGWH3-mZCg=.p7b",
-          "signAlg": "SHA256withECDSA",
-          "storeFile": "C:\\Users\\74253\\.ohos\\config\\default_harmony_n2Pu8hP74gTj6dWAb4mUCbPBdBUdInFlSRGWH3-mZCg=.p12",
-          "storePassword": "0000001B7E2F256CE86C065C9FD6FDF59ACD51B31C5E86EBE9E5D636297846F1ECC4397E2A03A4C129934B"
-        }
-      }
-    ],
+    // 签名配置不入库：本文件仅作为模板，由 scripts/create-build-profile.js
+    // 在 npm install 时复制/刷新为本地 build-profile.json5（该文件被 .gitignore 忽略）
+    "signingConfigs": [],
     "products": [
       {
         "name": "default",
