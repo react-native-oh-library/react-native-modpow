@@ -9,13 +9,13 @@
   "types": "./dist/typescript/index.d.ts",
   "license": "MIT",
   "private": false,
-  "repository": "https://github.com/seald/react-native-modpow",
+  "repository": "https://github.com/react-native-oh-library/react-native-modpow",
   "keywords": [
     "react-native",
     "harmony",
     "harmonyos"
   ],
-  "homepage": "https://github.com/seald/react-native-modpow",
+  "homepage": "https://github.com/react-native-oh-library/react-native-modpow",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -24,6 +24,7 @@
     "src/",
     "harmony/",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE",
     "!harmony/oh_modules",
     "!harmony/**/build",

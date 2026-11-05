@@ -8,7 +8,7 @@ This project is based on [react-native-modpow](https://github.com/seald/react-na
 
 | Name | Version(Npm Address) | Release Information | Supported RN Version | Supported Autolink | Compile API Version | Community Baseline Version | Source code address |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| @react-native-ohos/react-native-modpow | [~ 1.1.0](https://www.npmjs.com/package/@react-native-ohos/react-native-modpow) | [GitHub Releases](https://github.com/xiayukun1111/react-native-modpow/releases) | 0.84.* / 0.82.* / 0.77.* / 0.72.* | Yes | API12+ | 1.1.0 | [master](https://github.com/xiayukun1111/react-native-modpow) |
+| @react-native-ohos/react-native-modpow | [~ 1.1.0](https://www.npmjs.com/package/@react-native-ohos/react-native-modpow) | [GitHub Releases](https://github.com/react-native-oh-library/react-native-modpow/releases) | 0.84.* / 0.82.* / 0.77.* / 0.72.* | Yes | API12+ | 1.1.0 | [master](https://github.com/react-native-oh-library/react-native-modpow) |
 
 ## Introduction
 
@@ -317,7 +317,7 @@ None
 
 ## How to Contribute
 
-If you find any problem when using react-native-modpow, submit an [issue](https://github.com/xiayukun1111/react-native-modpow/issues) or a [PR](https://github.com/xiayukun1111/react-native-modpow/pulls).
+If you find any problem when using react-native-modpow, submit an [issue](https://github.com/react-native-oh-library/react-native-modpow/issues) or a [PR](https://github.com/react-native-oh-library/react-native-modpow/pulls).
 
 ## License
 
