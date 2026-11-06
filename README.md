@@ -8,7 +8,7 @@
 
 | 三方库名称 | 三方库版本（npm地址） | 发布信息 | 支持RN版本 | Autolink | 编译API版本 | 社区基线版本 | 源码地址 |
 | ------------ | ------------ | ------------------------------ | ------------- | ------------- |------------------------ | ------------- | ------------- |
-| @react-native-ohos/react-native-modpow | [~ 1.1.0](https://www.npmjs.com/package/@react-native-ohos/react-native-modpow) | [GitHub Releases](https://github.com/xiayukun1111/react-native-modpow/releases) | 0.84.* / 0.82.* / 0.77.* / 0.72.* | 是 | API12+ | 1.1.0 | [master](https://github.com/xiayukun1111/react-native-modpow) |
+| @react-native-ohos/react-native-modpow | [~ 1.1.0](https://www.npmjs.com/package/@react-native-ohos/react-native-modpow) | [GitHub Releases](https://github.com/react-native-oh-library/react-native-modpow/releases) | 0.84.* / 0.82.* / 0.77.* / 0.72.* | 是 | API12+ | 1.1.0 | [master](https://github.com/react-native-oh-library/react-native-modpow) |
 
 ## 简介
 
@@ -317,7 +317,7 @@ npm run run:harmony -- 0.77
 
 ## 贡献代码
 
-使用过程中发现任何问题都可以提交 [Issue](https://github.com/xiayukun1111/react-native-modpow/issues)，当然，也非常欢迎提交 [PR](https://github.com/xiayukun1111/react-native-modpow/pulls)。
+使用过程中发现任何问题都可以提交 [Issue](https://github.com/react-native-oh-library/react-native-modpow/issues)，当然，也非常欢迎提交 [PR](https://github.com/react-native-oh-library/react-native-modpow/pulls)。
 
 ## 开源协议
 
