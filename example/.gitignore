@@ -69,6 +69,9 @@ harmony/entry/src/main/resources/rawfile/hermes_bundle.hbc
 # testing
 /coverage
 
+# Jest 白盒测试运行产物（被测源码副本，见 jest.global-setup.js）
+.modpow-sut/
+
 package-lock.json
 # RN framework version marker (see scripts/use-framework.js)
 .framework-version
